@@ -26,16 +26,16 @@ setTimeout(() => {
 }, 1503);
 
 // Menu button
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+const toggleIcon = document.querySelector(".toggle-icon");
+const navItems = document.querySelector(".nav-links");
 // When hamburger button is clicked, show links or hide links
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navLinks.classList.toggle("active");
+toggleIcon.addEventListener("click", () => {
+  toggleIcon.classList.toggle("active");
+  navItems.classList.toggle("active");
 });
 document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navLinks.classList.remove("active");
+    toggleIcon.classList.remove("active");
+    navItems.classList.remove("active");
   })
 );
