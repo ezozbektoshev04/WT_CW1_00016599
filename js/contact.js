@@ -46,5 +46,9 @@ form.addEventListener("submit", (event) => {
     form.elements["firstName"].nextElementSibling.textContent == ""
   ) {
     alert("You sent successfully sent request, please wait our answer");
+    form.elements["subject"].value = "";
+    form.elements["email"].value = "";
+    form.elements["lastName"].value = "";
+    form.elements["firstName"].value = "";
   }
 });
